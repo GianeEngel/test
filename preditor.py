@@ -64,7 +64,8 @@ if st.button('Calculos'):
     #   aisi = (float(neu)*int(pla)*float(mon))/float(lin)
     
     st.write('NLR:',nlr)
-    print("{:.2f}".format(NLR))
+    limit_float = round(nlr, 2)
+    print('NOVO-NLR:',limit_float)
     st.write('PLR:',plr)
     st.write('SII:',sii)
     st.write('SIRI:',siri)
