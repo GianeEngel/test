@@ -58,17 +58,14 @@ if st.button('Calculos'):
     #aisi = st.number_input('AISI.1')
     #   aisi = (float(neu)*int(pla)*float(mon))/float(lin)
     
-    st.write('NLR:',nlr)
-    st.write('PLR:',plr)
-    st.write('SII:',sii)
-    st.write('SIRI:',siri)
-    st.write('AISI:',aisi)
+st.write('NLR:',nlr)
+st.write('PLR:',plr)
+st.write('SII:',sii)
+st.write('SIRI:',siri)
+st.write('AISI:',aisi)
 
-    pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
-    pred = modelo.predict([pac])
-
-
-
+pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
+pred = modelo.predict([pac])
 
 if st.button('Analyze'):
     indice = float(pred)
