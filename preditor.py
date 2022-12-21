@@ -35,13 +35,23 @@ else:
 
 if st.button('Calculos'):
     #nlr = st.number_input('NLR.1')
-    nlr = float(neu)/float(lin)
+ if lin = 0:
+    nlr = 0
+    plr = 0
+    else:
+        nlr = float(neu)/float(lin)
     #plr = st.number_input('PLR.1')
-    plr = float(pla)/float(lin)
+        plr = float(pla)/float(lin)
     #sii = st.number_input('SII.1')
-    sii = plr/float(neu)
+    if neu = 0:
+        sii = 0
+        else:
+            sii = plr/float(neu)
     #siri = st.number_input('SIRI.1')
-    siri = nlr/float(mon)
+    if mon = 0:
+        siri = 0
+        else:
+            siri = nlr/float(mon)
     #aisi = st.number_input('AISI.1')
     aisi = (float(neu)*int(pla)*float(mon))/float(lin)
     st.write('NLR:',nlr)
