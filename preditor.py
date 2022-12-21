@@ -50,13 +50,13 @@ if st.button('Calculos'):
     st.write('SII:',sii)
     st.write('SIRI:',siri)
     st.write('AISI:',aisi)
-    pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
+  '''  pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
     pred = modelo.predict([pac])
 
 
 
 
-#if st.button('Analyze'):
+if st.button('Analyze'):
     indice = float(pred)
     st.write('Gravidade pred:',gravidade[float(pred)])
     if indice == 0:
