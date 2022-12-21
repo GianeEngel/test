@@ -18,7 +18,7 @@ st.title('Preditor de gravidade COVID-19')
 rdw = st.number_input('RDW (%)',min_value=(10),max_value=(9000))
 leu = st.number_input('Leukocytes (x109/L)',min_value=(1),max_value=(270))
 lin = st.number_input('Lymphocytes (x109/L)')
-mon = st.number_input('Monocytes (x109/L)',min_value=(1))
+mon = st.number_input('Monocytes (x109/L)')
 neu = st.number_input('Neutrophils (x109/L)',min_value=(1),max_value=(35))
 pcr = st.number_input('PCR (mg/dL)')
 pla = st.number_input('Plaquetas (x109/L)')#
