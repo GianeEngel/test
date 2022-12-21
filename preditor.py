@@ -39,10 +39,10 @@ if st.button('Calculos'):
     nlr = 0
     plr = 0
     aisi = 0
- else:
-    if mon == 0:
-        siri = 0
-    else:
+ else if mon == 0:
+    siri = 0
+ 
+ else:   
         siri = nlr/float(mon)
     #aisi = st.number_input('AISI.1')
         aisi = (float(neu)*int(pla)*float(mon))/float(lin)
