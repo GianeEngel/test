@@ -64,6 +64,7 @@ if st.button('Calculos'):
     #   aisi = (float(neu)*int(pla)*float(mon))/float(lin)
     
     st.write('NLR:',nlr)
+    print("NLR:{:.2f}".format(NLR))
     st.write('PLR:',plr)
     st.write('SII:',sii)
     st.write('SIRI:',siri)
