@@ -35,23 +35,23 @@ else:
     dm2 = 1
 
 if st.button('Calculos'):
-#nlr = st.number_input('NLR.1')
-nlr = int(neu)/int(lin)
-#plr = st.number_input('PLR.1')
-plr = int(pla)/int(lin)
-#sii = st.number_input('SII.1')
-sii = plr/int(neu)
-#siri = st.number_input('SIRI.1')
-siri = nlr/int(mon)
-#aisi = st.number_input('AISI.1')
-aisi = (int(neu)*int(pla)*int(mon))/int(lin)
-st.write('NLR:',nlr)
-st.write('PLR:',plr)
-st.write('SII:',sii)
-st.write('SIRI:',siri)
-st.write('AISI:',aisi)
-pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
-pred = modelo.predict([pac])
+    #nlr = st.number_input('NLR.1')
+    nlr = int(neu)/int(lin)
+    #plr = st.number_input('PLR.1')
+    plr = int(pla)/int(lin)
+    #sii = st.number_input('SII.1')
+    sii = plr/int(neu)
+    #siri = st.number_input('SIRI.1')
+    siri = nlr/int(mon)
+    #aisi = st.number_input('AISI.1')
+    aisi = (int(neu)*int(pla)*int(mon))/int(lin)
+    st.write('NLR:',nlr)
+    st.write('PLR:',plr)
+    st.write('SII:',sii)
+    st.write('SIRI:',siri)
+    st.write('AISI:',aisi)
+    pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
+    pred = modelo.predict([pac])
 
 
 
