@@ -45,12 +45,13 @@ if st.button('Calculos'):
     #sii = st.number_input('SII.1')
       sii = plr/float(neu)
     #siri = st.number_input('SIRI.1')
-    if mon == 0:
+ if mon == 0:
         siri = 0
     else:
        siri = nlr/float(mon)
     #aisi = st.number_input('AISI.1')
     aisi = (float(neu)*int(pla)*float(mon))/float(lin)
+    
     st.write('NLR:',nlr)
     st.write('PLR:',plr)
     st.write('SII:',sii)
