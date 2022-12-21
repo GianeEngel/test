@@ -33,15 +33,15 @@ if dbm2=='Nao':
 else:
     dm2 = 1
 
-if st.button('Calculos'):
+#if st.button('Calculos'):
     #nlr = st.number_input('NLR.1')
- if lin == 0:
+if lin == 0:
     nlr = 0
     plr = 0
     aisi = 0
- elif mon == 0:
+elif mon == 0:
     siri = 0
- else:
+else:
     siri = nlr/float(mon)
     #aisi = st.number_input('AISI.1')
     aisi = (float(neu)*int(pla)*float(mon))/float(lin)
@@ -58,11 +58,11 @@ if st.button('Calculos'):
     #aisi = st.number_input('AISI.1')
     #   aisi = (float(neu)*int(pla)*float(mon))/float(lin)
     
-st.write('NLR:',nlr)
-st.write('PLR:',plr)
-st.write('SII:',sii)
-st.write('SIRI:',siri)
-st.write('AISI:',aisi)
+    st.write('NLR:',nlr)
+    st.write('PLR:',plr)
+    st.write('SII:',sii)
+    st.write('SIRI:',siri)
+    st.write('AISI:',aisi)
 
 pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
 pred = modelo.predict([pac])
