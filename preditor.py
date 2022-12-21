@@ -50,7 +50,7 @@ if st.button('Calculos'):
     st.write('SII:',sii)
     st.write('SIRI:',siri)
     st.write('AISI:',aisi)
-  '''  pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
+'''  pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
     pred = modelo.predict([pac])
 
 
@@ -66,4 +66,4 @@ if st.button('Analyze'):
             st.image('moderate-risk.png')
         else:
             st.image('high-risk.png')
-    
+ '''
