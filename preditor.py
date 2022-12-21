@@ -33,7 +33,7 @@ if dbm2=='Nao':
 else:
     dm2 = 1
 
-#if st.button('Calculos'):
+if st.button('Calculos'):
     #nlr = st.number_input('NLR.1')
  if lin == 0:
     nlr = 0
