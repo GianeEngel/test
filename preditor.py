@@ -65,7 +65,7 @@ if st.button('Calculos'):
     
     st.write('NLR:',nlr)
     limit_float = round(nlr, 2)
-    print('NOVO-NLR:',limit_float)
+    st.write('NOVO-NLR:',limit_float)
     st.write('PLR:',plr)
     st.write('SII:',sii)
     st.write('SIRI:',siri)
