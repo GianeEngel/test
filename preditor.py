@@ -12,7 +12,6 @@ import streamlit as st
 import pandas as pd
 
 gravidade = ['Leve','Moderada','Grave']
-float neu,nlr,plr,sii,siri,aisi,lin,neu
 nome = 'giane.sav'
 modelo = joblib.load(nome)
 st.title('Preditor de gravidade COVID-19')
