@@ -47,7 +47,7 @@ if st.button('Calculos'):
     st.write('NLR:',nlr)
     st.write('PLR:',plr)
     st.write('SII:',sii)
-    st.write('SIRI:'.2,siri)
+    st.write('SIRI:',.2siri)
     st.write('AISI:',aisi)
 
     pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
