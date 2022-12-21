@@ -63,13 +63,16 @@ if st.button('Calculos'):
     #aisi = st.number_input('AISI.1')
     #   aisi = (float(neu)*int(pla)*float(mon))/float(lin)
     
-    st.write('NLR:',nlr)
-    limit_float = round(nlr, 2)
-    st.write('NOVO-NLR:',limit_float)
-    st.write('PLR:',plr)
-    st.write('SII:',sii)
-    st.write('SIRI:',siri)
-    st.write('AISI:',aisi)
+    limit_float_nlr = round(nlr, 2)
+    st.write('NLR:',limit_float_nlr)
+    limit_float_plr = round(plr, 2)
+    st.write('PLR:',limit_float_plr)
+    limit_float_sii = round(sii, 2)
+    st.write('SII:',limit_float_sii)    
+    limit_float_siri = round(siri, 2)
+    st.write('SIRI:',limit_float_siri)   
+    limit_float_aisi = round(aisi, 2)
+    st.write('AISI:',limit_float_aisi)  
 
 pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
 pred = modelo.predict([pac])
