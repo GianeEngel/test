@@ -15,6 +15,11 @@ gravidade = ['Leve','Moderada','Grave']
 nome = 'giane.sav'
 modelo = joblib.load(nome)
 st.title('Preditor de gravidade COVID-19')
+siri = 0
+aisi = 0
+nlr = 0
+plr = 0
+sii = 0
 rdw = st.number_input('RDW (%)',min_value=(10),max_value=(9000))
 leu = st.number_input('Leukocytes (x109/L)',min_value=(1),max_value=(270))
 lin = st.number_input('Lymphocytes (x109/L)')
