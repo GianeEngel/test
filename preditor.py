@@ -57,8 +57,8 @@ if st.button('Calculos'):
 
 
 #if st.button('Analyze'):
-    indice = int(pred)
-    st.write('Gravidade pred:',gravidade[int(pred)])
+    indice = float(pred)
+    st.write('Gravidade pred:',gravidade[float(pred)])
     if indice == 0:
         st.image('low-risk.png')
     else:
