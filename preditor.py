@@ -33,6 +33,8 @@ if dbm2=='Nao':
     dm2 = 0
 else:
     dm2 = 1
+
+if st.button('Calculos'):
 #nlr = st.number_input('NLR.1')
 nlr = int(neu)/int(lin)
 #plr = st.number_input('PLR.1')
