@@ -50,7 +50,7 @@ if st.button('Calculos'):
     else:
        siri = nlr/float(mon)
     #aisi = st.number_input('AISI.1')
-    aisi = (float(neu)*int(pla)*float(mon))/float(lin)
+       aisi = (float(neu)*int(pla)*float(mon))/float(lin)
     
     st.write('NLR:',nlr)
     st.write('PLR:',plr)
