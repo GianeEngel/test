@@ -78,8 +78,8 @@ pac = [rdw,leu,neu,pcr,sat,dm2,nlr,plr,sii,siri,aisi]
 pred = modelo.predict([pac])
 
 if st.button('Analyze'):
-    indice = float(pred)
-    st.write('Gravidade pred:',gravidade[float(pred)])
+    indice = int(pred)
+    st.write('Gravidade pred:',gravidade[int(pred)])
     if indice == 0:
         st.image('low-risk.png')
     else:
