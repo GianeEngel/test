@@ -17,18 +17,18 @@ nome = 'giane.sav'
 modelo = joblib.load(nome)
 st.title('Preditor de gravidade COVID-19')
 rdw = st.number_input('RDW (%)',min_value=(10),max_value=(9000))
-leu = st.number_input('Leucócitos (x109/L)',min_value=(0),max_value=(270))
-lin = st.number_input('Linfócitos (x109/L)',min_value=(1))#
-mon = st.number_input('Monócitos (x109/L)',min_value=(1))#
-neu = st.number_input('Neutrófilos (x109/L)',min_value=(1),max_value=(35))
+leu = st.number_input('Leukocytes (x109/L)',min_value=(0),max_value=(270))
+lin = st.number_input('Lymphocytes (x109/L)',min_value=(1))#
+mon = st.number_input('Monocytes (x109/L)',min_value=(1))#
+neu = st.number_input('Neutrophils (x109/L)',min_value=(1),max_value=(35))
 pcr = st.number_input('PCR (mg/dL)')
 pla = st.number_input('Plaquetas (x109/L)')#
-satO = st.selectbox('Saturação Oximetria',('<95','>=95'))
+satO = st.selectbox('Saturation Oximetry',('<95','>=95'))
 if satO == '<95':
     sat=0
 else:
     sat=1
-dbm2 = st.selectbox('Diabetes Mellitus tipo 2',('Nao','Sim'))
+dbm2 = st.selectbox('Diabetes Mellitus type 2',('NO','YES'))
 if dbm2=='Nao':
     dm2 = 0
 else:
@@ -54,7 +54,7 @@ pred = modelo.predict([pac])
 
 
 
-if st.button('Analisar'):
+if st.button('Analyze'):
     indice = int(pred)
     st.write('Gravidade pred:',gravidade[int(pred)])
     if indice == 0:
