@@ -39,7 +39,7 @@ if st.button('Calculos'):
     nlr = 0
     plr = 0
     aisi = 0
- if-else mon == 0:
+ elif mon == 0:
     siri = 0
   else:   
         siri = nlr/float(mon)
