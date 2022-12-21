@@ -43,10 +43,7 @@ if st.button('Calculos'):
     #plr = st.number_input('PLR.1')
       plr = float(pla)/float(lin)
     #sii = st.number_input('SII.1')
-    if neu == 0:
-        sii = 0
-    else:
-        sii = plr/float(neu)
+      sii = plr/float(neu)
     #siri = st.number_input('SIRI.1')
     if mon == 0:
         siri = 0
