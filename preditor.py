@@ -12,7 +12,7 @@ import streamlit as st
 import pandas as pd
 
 gravidade = ['Leve','Moderada','Grave']
-
+float neu,nlr,plr,sii,siri,aisi,lin,neu
 nome = 'giane.sav'
 modelo = joblib.load(nome)
 st.title('Preditor de gravidade COVID-19')
@@ -36,15 +36,15 @@ else:
 
 if st.button('Calculos'):
     #nlr = st.number_input('NLR.1')
-    float(nlr) = float(neu)/float(lin)
+    nlr = float(neu)/float(lin)
     #plr = st.number_input('PLR.1')
-    float(plr) = float(pla)/float(lin)
+    plr = float(pla)/float(lin)
     #sii = st.number_input('SII.1')
-    float(sii) = plr/float(neu)
+    sii = plr/float(neu)
     #siri = st.number_input('SIRI.1')
-    float(siri) = nlr/float(mon)
+    siri = nlr/float(mon)
     #aisi = st.number_input('AISI.1')
-    float(aisi) = (float(neu)*float(pla)*float(mon))/float(lin)
+    aisi = (float(neu)*int(pla)*float(mon))/float(lin)
     st.write('NLR:',nlr)
     st.write('PLR:',plr)
     st.write('SII:',sii)
