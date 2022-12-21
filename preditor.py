@@ -38,24 +38,24 @@ if dbm2=='Nao':
 else:
     dm2 = 1
 
-#if st.button('Calculos'):
+if st.button('Calculos'):
     #nlr = st.number_input('NLR.1')
-if lin == 0:
-    nlr = 0
-    plr = 0
-    aisi = 0
-elif mon == 0:
-    siri = 0
-else:
-    siri = nlr/float(mon)
-    #aisi = st.number_input('AISI.1')
-    aisi = (float(neu)*int(pla)*float(mon))/float(lin)
-    nlr = float(neu)/float(lin)
-    #plr = st.number_input('PLR.1')
-    plr = float(pla)/float(lin)
-    #sii = st.number_input('SII.1')
-    sii = plr/float(neu)
-    #siri = st.number_input('SIRI.1')
+    if lin == 0:
+        nlr = 0
+        plr = 0
+        aisi = 0
+    elif mon == 0:
+        siri = 0
+    else:
+        siri = nlr/float(mon)
+        #aisi = st.number_input('AISI.1')
+        aisi = (float(neu)*int(pla)*float(mon))/float(lin)
+        nlr = float(neu)/float(lin)
+        #plr = st.number_input('PLR.1')
+        plr = float(pla)/float(lin)
+        #sii = st.number_input('SII.1')
+        sii = plr/float(neu)
+        #siri = st.number_input('SIRI.1')
 # if mon == 0:
  #       siri = 0
   #  else:
