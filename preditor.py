@@ -56,7 +56,7 @@ if st.button('Calculos'):
 
 
 
-if st.button('Analyze'):
+#if st.button('Analyze'):
     indice = int(pred)
     st.write('Gravidade pred:',gravidade[int(pred)])
     if indice == 0:
